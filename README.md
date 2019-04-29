@@ -30,4 +30,15 @@ And I will update them according to my dev road.
       ...require('prettier-config-xhmm')
     };
     ```
-4. after setup, every prettier format problem will become an eslint error, more details please see config files, happy coding !
+    
+4. edit `tsconfig.json`：
+    ```json
+    {
+      "compilerOptions": {
+        "noUnusedLocals": true,
+        "noUnusedParameters": true
+      }
+    }
+    ```
+    
+5. after setup, every prettier format problem will become an eslint error, more details please see config files, happy coding !
