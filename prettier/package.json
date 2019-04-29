@@ -1,0 +1,7 @@
+{
+  "name": "prettier-config-xhmm",
+  "version": "0.0.2",
+  "main": "prettier.config.js",
+  "author": "xhmm",
+  "license": "MIT"
+}
