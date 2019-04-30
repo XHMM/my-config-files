@@ -43,7 +43,7 @@ And I will update them according to my dev road.
 
 5. if using `xhmm/ts-browser`, go on create `.browserslistrc` and configure your target browser
 
-6. lastly, you need to have a `tsconfig.json` file for some rules to work, by default, it will search your root dir relative to node_modules, if you want to change it, change your `.eslintrc` as below :
+6. you need to have a `tsconfig.json` file for some rules to work, by default, it will search your root dir relative to node_modules, if you want to change it, change your `.eslintrc` as below :
     ```json
         {
           "extends": ["xhmm/ts-node"],
@@ -53,6 +53,15 @@ And I will update them according to my dev road.
           }
         }
     ```
+7. next is config stylelint, it's pretty simple
+8. `yarn add --dev stylelint stylelint-config-standard`
+9. create `.stylelintrc`(I am not very focus on this linter, so rules and related plugins not involved)：
+    ```json
+    {
+      "extends": "stylelint-config-standard"
+    }
+    ```
+10. you can create `.eslintignore` and `.stylelintignore` to ignore files 
 
 That's all, after setup, every prettier format problem will become an eslint error and some other rules you can get from source config files, happy coding !
 
