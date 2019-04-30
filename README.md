@@ -53,16 +53,16 @@ And I will update them according to my dev road.
 5. if using `xhmm/ts-browser`, go on create `.browserslistrc` and configure your target browser
 11. create a `.editconfig` file if possible
 
-7. (optional) stylelint setup, it's pretty simple (I am not very focus on this linter, so rules and related plugins not involved much more)：
-8. `yarn add --dev stylelint stylelint-config-standard`
-9. create `.stylelintrc`：
-    ```json
-    {
-      "extends": "stylelint-config-standard"
-    }
-    ```
+7. (optional) stylelint setup, it's pretty simple (I am not very focus on this linter(because webstorm support is bad?), so rules and related plugins not involved much more)：
+    - `yarn add --dev stylelint stylelint-config-standard`
+    - create `.stylelintrc`：
+      ```json
+      {
+        "extends": "stylelint-config-standard"
+      }
+      ```
 
-10. create `.eslintignore` and `.stylelintignore` to ignore not related files. (PS: **ignorefile should must be placed in root dir**) 
+10. create `.eslintignore` and `.stylelintignore` to ignore not related files. (remind: ignorefile should be placed in root dir) 
 
 That's all, after setup, every prettier format problem will become an eslint error and some other rules you can get from source config files, happy coding !
 
