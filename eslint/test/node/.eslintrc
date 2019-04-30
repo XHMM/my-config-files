@@ -1,3 +1,7 @@
 {
-  "extends": ["../../ts-node.js"]
+  "extends": ["../../ts-node.js"],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "./"
+  }
 }

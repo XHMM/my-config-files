@@ -2,19 +2,26 @@ module.exports = {
   extends: [
     "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
-    "plugin:prettier/recommended",
+    "plugin:prettier/recommended"
   ],
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "import"],
   rules: {
+    /*--- @typescript-eslint/eslint-plugin ---*/
+    /* change recommended */
+    "@typescript-eslint/array-type": ["error", "array-simple"],
     "@typescript-eslint/camelcase": "off",
-    "@typescript-eslint/no-unused-vars": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-function-return-type": ["error", {"allowExpressions": true}],
     "@typescript-eslint/explicit-member-accessibility": "off",
-    "@typescript-eslint/no-use-before-define": ["error", { "functions": false }],
     "@typescript-eslint/interface-name-prefix": ["error", "always"],
+    "@typescript-eslint/no-use-before-define": ["error", { functions: false }],
+    /* add custom */
+    "@typescript-eslint/ban-ts-ignore": ["warn"],
+    "@typescript-eslint/member-ordering": ["error"],
+    "@typescript-eslint/restrict-plus-operands": ["error"],
 
-    /* i don't why eslint-plugin-import builtin extended rules not work, so i build my custom  rules*/
+    /*--- eslint-plugin-import ---*/
+    /* i don't why extend recommended rules not work, so i build my custom  rules*/
     /* Style guide */
     "import/first": ["error"],
     "import/exports-last": ["error"],
@@ -27,6 +34,8 @@ module.exports = {
     "import/no-nodejs-modules": ["error"]
   },
   parserOptions: {
-    sourceType: "module"
+    sourceType: "module",
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "../../",
   }
-}
+};

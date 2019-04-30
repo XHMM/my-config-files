@@ -40,5 +40,20 @@ And I will update them according to my dev road.
       }
     }
     ```
-    
-5. after setup, every prettier format problem will become an eslint error, more details please see config files, happy coding !
+
+5. if using `xhmm/ts-browser`, go on create `.browserslistrc` and configure your target browser
+
+6. lastly, you need to have a `tsconfig.json` file for some rules to work, by default, it will search your root dir relative to node_modules, if you want to change it, change your `.eslintrc` as below :
+    ```json
+        {
+          "extends": ["xhmm/ts-node"],
+          "parserOptions": {
+            "project": "./tsconfig.json",
+            "tsconfigRootDir": "../../"
+          }
+        }
+    ```
+
+That's all, after setup, every prettier format problem will become an eslint error and some other rules you can get from source config files, happy coding !
+
+To write better ts code, I will add `ban-ts-ignore` and enable `strict` in `tsconfig.json` in the future.
