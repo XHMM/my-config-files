@@ -11,7 +11,7 @@ module.exports = {
     /* change recommended */
     "@typescript-eslint/array-type": ["error", "array-simple"],
     "@typescript-eslint/camelcase": "off",
-    "@typescript-eslint/explicit-function-return-type": ["error", {"allowExpressions": true}],
+    "@typescript-eslint/explicit-function-return-type": ["error", {"allowExpressions": true,allowTypedFunctionExpressions: true }],
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/interface-name-prefix": ["error", "always"],
     "@typescript-eslint/no-use-before-define": ["error", { functions: false }],
