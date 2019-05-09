@@ -42,7 +42,7 @@ And I will update them according to my dev road.
 6. you need to have a `tsconfig.json` file for some rules to work, by default, it will search your root dir relative to node_modules, if you want to change it, change your `.eslintrc` as below :
     ```json
         {
-          "extends": ["xhmm/ts-node"],
+          "extends": ["xhmm/ts-xx"],
           "parserOptions": {
             "project": "./tsconfig.json",
             "tsconfigRootDir": "../../"
@@ -51,7 +51,17 @@ And I will update them according to my dev road.
     ```
     
 5. if using `xhmm/ts-browser`, go on create `.browserslistrc` and configure your target browser
-11. create a `.editconfig` file if possible
+11. create a `.editconfig` file :
+    ```text
+    root = true
+    [*]
+    indent_style = space
+    indent_size = 2
+    end_of_line = lf
+    charset = utf-8
+    trim_trailing_whitespace = false
+    insert_final_newline = true
+    ```
 
 7. (optional) stylelint setup, it's pretty simple (I am not very focus on this linter(because webstorm support is bad?), so rules and related plugins not involved much more)：
     - `yarn add --dev stylelint stylelint-config-standard`
@@ -62,7 +72,7 @@ And I will update them according to my dev road.
       }
       ```
 
-10. create `.eslintignore` and `.stylelintignore` to ignore not related files. (remind: ignorefile should be placed in root dir) 
+10. (optional) create `.eslintignore` and `.stylelintignore` to ignore not related files. (remind: ignorefile should be placed in root dir) 
 
 That's all, after setup, every prettier format problem will become an eslint error and some other rules you can get from source config files, happy coding !
 
