@@ -39,13 +39,12 @@ And I will update them according to my dev road.
     }
     ```
 
-6. you need to have a `tsconfig.json` file for some rules to work, by default, it will search your root dir relative to node_modules, if you want to change it, change your `.eslintrc` as below :
+5. you need to have a `tsconfig.json` file for some rules to work, by default, it will search `tsconfig.json` in the same level with node_modules, if you want to change it, change your `.eslintrc` as below :
     ```json
         {
           "extends": ["xhmm/ts-xx"],
           "parserOptions": {
-            "project": "./tsconfig.json",
-            "tsconfigRootDir": "../../"
+            "project": "./src/tsconfig.json"
           }
         }
     ```

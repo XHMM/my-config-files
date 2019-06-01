@@ -1,7 +1,6 @@
 {
   "extends": ["../../ts-node.js"],
   "parserOptions": {
-    "project": "./tsconfig.json",
-    "tsconfigRootDir": "./"
+    "project": "./test/node/tsconfig.json"
   }
 }

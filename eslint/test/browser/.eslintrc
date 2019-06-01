@@ -1,3 +1,6 @@
 {
-  "extends": ["../../ts-browser.js"]
+  "extends": ["../../ts-browser.js"],
+  "parserOptions": {
+    "project": "./test/browser/tsconfig.json"
+  }
 }
