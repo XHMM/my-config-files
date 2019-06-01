@@ -22,6 +22,12 @@ And I will update them according to my dev road.
       "extends": ["xhmm/ts-browser"]
     }
     ```
+    or
+    ```json
+    {
+      "extends": ["xhmm/ts-react"]
+    }
+    ```
 3. create `prettier.config.js`：
     ```js
     module.exports = {
@@ -29,7 +35,7 @@ And I will update them according to my dev road.
     };
     ```
     
-4. edit `tsconfig.json`：
+4. edit `tsconfig.json`(below means let tsc deal but not eslint because tsc is more efficient)：
     ```json
     {
       "compilerOptions": {
@@ -49,20 +55,21 @@ And I will update them according to my dev road.
         }
     ```
     
-5. if using `xhmm/ts-browser`, go on create `.browserslistrc` and configure your target browser
-11. create a `.editconfig` file :
-    ```text
-    root = true
-    [*]
-    indent_style = space
-    indent_size = 2
-    end_of_line = lf
-    charset = utf-8
-    trim_trailing_whitespace = false
-    insert_final_newline = true
-    ```
+6. create a `.editconfig` file :
+       ```text
+       root = true
+       [*]
+       indent_style = space
+       indent_size = 2
+       end_of_line = lf
+       charset = utf-8
+       trim_trailing_whitespace = false
+       insert_final_newline = true
+       ```
 
-7. (optional) stylelint setup, it's pretty simple (I am not very focus on this linter(because webstorm support is bad?), so rules and related plugins not involved much more)：
+7. (optional) if using `xhmm/ts-browser` or `xhmm/ts-react``, go on create `.browserslistrc` and configure your target browser(browserslist not work very well... so you can skip this step)
+
+8. (optional) stylelint setup: it's pretty simple (I am not very focus on this linter(because webstorm support is bad?))：
     - `yarn add --dev stylelint stylelint-config-standard`
     - create `.stylelintrc`：
       ```json
@@ -71,11 +78,6 @@ And I will update them according to my dev road.
       }
       ```
 
-10. (optional) create `.eslintignore` and `.stylelintignore` to ignore not related files. (remind: ignorefile should be placed in root dir) 
+10. (optional) create `.eslintignore` and `.stylelintignore` to ignore not related files. (remind: ignorefiles should be placed in root dir) 
 
-That's all, after setup, every prettier format problem will become an eslint error and some other rules you can get from source config files, happy coding !
-
-
-## Future Plan
-
-To write better ts code, I will add `ban-ts-ignore` and enable `strict` in `tsconfig.json` in the future.
+That's all, after setup, every prettier format problem will become an eslint error, you can checkout other rules from source config files, happy confident coding!

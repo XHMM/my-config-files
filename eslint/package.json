@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-xhmm",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "MIT",
   "author": "xhmm",
   "dependencies": {
@@ -12,6 +12,7 @@
     "eslint-plugin-no-unsanitized": "^3.0.2",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
     "eslint-plugin-security": "^1.4.0"
   },
   "peerDependencies": {
