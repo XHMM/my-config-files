@@ -56,16 +56,16 @@ And I will update them according to my dev road.
     ```
     
 6. create a `.editconfig` file :
-       ```text
-       root = true
-       [*]
-       indent_style = space
-       indent_size = 2
-       end_of_line = lf
-       charset = utf-8
-       trim_trailing_whitespace = false
-       insert_final_newline = true
-       ```
+     ```text
+     root = true
+     [*]
+     indent_style = space
+     indent_size = 2
+     end_of_line = lf
+     charset = utf-8
+     trim_trailing_whitespace = false
+     insert_final_newline = true
+     ```
 
 7. (optional) if using `xhmm/ts-browser` or `xhmm/ts-react``, go on create `.browserslistrc` and configure your target browser(browserslist not work very well... so you can skip this step)
 
