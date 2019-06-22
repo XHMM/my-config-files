@@ -1,0 +1,6 @@
+{
+  "extends": ["../../ts-react.js"],
+  "parserOptions": {
+    "project": "./test/react/tsconfig.json"
+  }
+}

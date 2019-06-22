@@ -15,6 +15,7 @@ module.exports = {
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/interface-name-prefix": ["error", "always"],
     "@typescript-eslint/no-use-before-define": ["error", { functions: false }],
+    "@typescript-eslint/no-unused-vars": 0,
     /* add custom */
     "@typescript-eslint/ban-ts-ignore": ["warn"],
     "@typescript-eslint/member-ordering": ["error"],
