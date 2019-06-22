@@ -67,7 +67,7 @@ And I will update them according to my dev road.
      insert_final_newline = true
      ```
 
-7. (optional) if using `xhmm/ts-browser` or `xhmm/ts-react``, go on create `.browserslistrc` and configure your target browser(browserslist not work very well... so you can skip this step)
+7. if using `xhmm/ts-browser` or `xhmm/ts-react`, go on creating `.browserslistrc` and configure your target browser ([examples](https://github.com/browserslist/browserslist#full-list))
 
 8. (optional) stylelint setup: it's pretty simple (I am not very focus on this linter(because webstorm support is bad?))：
     - `yarn add --dev stylelint stylelint-config-standard`
