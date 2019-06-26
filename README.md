@@ -67,7 +67,7 @@ And I will update them according to my dev road.
      insert_final_newline = true
      ```
 
-7. if using `xhmm/ts-browser` or `xhmm/ts-react`, go on creating `.browserslistrc` and configure your target browser ([examples](https://github.com/browserslist/browserslist#full-list))
+7. if using `xhmm/ts-browser` or `xhmm/ts-react`, go on creating `.browserslistrc` and configure your target browsers ([examples](https://github.com/browserslist/browserslist#full-list))
 
 8. (optional) stylelint setup: it's pretty simple (I am not very focus on this linter(because webstorm support is bad?))：
     - `yarn add --dev stylelint stylelint-config-standard`
@@ -80,4 +80,4 @@ And I will update them according to my dev road.
 
 10. (optional) create `.eslintignore` and `.stylelintignore` to ignore not related files. (remind: ignorefiles should be placed in root dir) 
 
-That's all, after setup, every prettier format problem will become an eslint error, you can checkout other rules from source config files, happy confident coding!
+That's all, after setup, every prettier format problem will become an eslint error (although it's very annoying, I want to force myself have a good habit of writing clean code, when I got it, I will turn off prettier related rules), you can checkout other rules from source config files, happy confident coding!
