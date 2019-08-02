@@ -1,7 +1,7 @@
 module.exports = {
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
     }
   },
   extends: ["./ts-browser.js", "plugin:react/recommended"],
@@ -16,6 +16,6 @@ module.exports = {
     "react-hooks/exhaustive-deps": "warn"
   },
   settings: {
-    "version": "detect"
+    version: "detect"
   }
-}
+};

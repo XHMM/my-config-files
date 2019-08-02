@@ -1,8 +1,12 @@
 module.exports = {
   env: {
-    "browser": true
+    browser: true
   },
-  extends: ["plugin:no-unsanitized/DOM" , "./ts-base.js", "plugin:compat/recommended"],
+  extends: [
+    "plugin:no-unsanitized/DOM",
+    "./ts-base.js",
+    "plugin:compat/recommended"
+  ],
   plugins: ["no-unsanitized"],
   rules: {}
-}
+};

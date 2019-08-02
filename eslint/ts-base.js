@@ -10,7 +10,14 @@ module.exports = {
     /*--- @typescript-eslint/eslint-plugin ---*/
     // change recommended
     "@typescript-eslint/array-type": ["error", "array-simple"],
-    "@typescript-eslint/explicit-function-return-type": ["error", {"allowExpressions": true,allowTypedFunctionExpressions: true }],
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        allowExpressions: true,
+        allowTypedFunctionExpressions: true,
+        allowHigherOrderFunctions: true
+      }
+    ],
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/interface-name-prefix": ["warn", "always"],
     "@typescript-eslint/no-use-before-define": ["error", { functions: false }],
@@ -23,7 +30,7 @@ module.exports = {
     "@typescript-eslint/member-ordering": ["error"],
     "@typescript-eslint/restrict-plus-operands": ["error"],
     "@typescript-eslint/require-await": ["error"],
-    "@typescript-eslint/no-misused-promises":["error"],
+    "@typescript-eslint/no-misused-promises": ["error"],
 
     /*--- eslint-plugin-import ---*/
     // i don't why extend recommended rules not work, so i build my custom  rules
@@ -40,7 +47,7 @@ module.exports = {
   },
   parserOptions: {
     sourceType: "module",
-    "project": "./tsconfig.json",
-    "tsconfigRootDir": ".",
+    project: "./tsconfig.json",
+    tsconfigRootDir: "."
   }
 };
