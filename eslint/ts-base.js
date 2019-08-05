@@ -30,7 +30,7 @@ module.exports = {
     "@typescript-eslint/member-ordering": ["error"],
     "@typescript-eslint/restrict-plus-operands": ["error"],
     "@typescript-eslint/require-await": ["error"],
-    "@typescript-eslint/no-misused-promises": ["error"],
+    "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }],
 
     /*--- eslint-plugin-import ---*/
     // i don't why extend recommended rules not work, so i build my custom  rules
