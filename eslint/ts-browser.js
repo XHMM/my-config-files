@@ -5,7 +5,7 @@ module.exports = {
   extends: [
     "plugin:no-unsanitized/DOM",
     "./ts-base.js",
-    "plugin:compat/recommended"
+    // "plugin:compat/recommended"
   ],
   plugins: ["no-unsanitized"],
   rules: {}

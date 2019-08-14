@@ -83,7 +83,7 @@ It's my own linter tools config setup, still 'in develop'.
    insert_final_newline = true
    ```
 
-7. if using `xhmm/ts-browser` or `xhmm/ts-react`, go on creating `.browserslistrc` and configure your target browsers ([examples](https://github.com/browserslist/browserslist#full-list))
+7. ~~if using `xhmm/ts-browser` or `xhmm/ts-react`, go on creating `.browserslistrc` and configure your target browsers ([examples](https://github.com/browserslist/browserslist#full-list))~~ I disabled `plugin:compat/recommended`, so please add it manually if you want it, and ps: don't forget to polyfill when working in browser env.
 
 8. (optional) stylelint setup: it's pretty simple (I am not very focus on this linter(because webstorm support is bad?))：
 
