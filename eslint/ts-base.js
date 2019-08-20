@@ -1,10 +1,15 @@
 module.exports = {
   extends: [
+    /*--- eslint ---*/
+    "eslint:recommended",
+    /*--- typescript ---*/
+    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    /*--- prettier ---*/
+    "prettier",
+    "prettier/@typescript-eslint"
   ],
-  parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "import"],
   rules: {
     /*--- @typescript-eslint/eslint-plugin ---*/
@@ -45,6 +50,7 @@ module.exports = {
     // Module systems
     "import/no-nodejs-modules": ["error"]
   },
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     sourceType: "module",
     project: "./tsconfig.json",

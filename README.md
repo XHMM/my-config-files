@@ -4,19 +4,19 @@ It's my own linter tools config setup, still 'in develop'.
 
 ## 😄 Say Hi
 
-​	My experience: although I used eslint and prettier many times but I did not remember to create a sharable config, so I always need to setup them every time, it's really cumbersome and even made me not want to use eslint and prettier. 
+My experience: although I used eslint and prettier many times but I did not remember to create a sharable config, so I always need to setup them every time, it's really cumbersome and even made me not want to use eslint and prettier. 
 
-​	One day I wake up and made this repo and publish them as npm module, now I can easily setup them, so happy. (PS: this repo will include all my config files not only eslint and prettier). I update this repo according to my dev road. 
+One day I wake up and made this repo and publish them as npm module, now I can easily setup them, so happy. (PS: this repo will include all my config files not only eslint and prettier). I update this repo according to my dev road. 
 
-​	**Reminid: ** This repo is just for personal use, if someone want to use it (happy), you'd better create your own rules (but I think this repo can help you learn how to create a sharable eslint/prettier config)
+**Reminid: ** This repo is just for personal use, if someone want to use it (happy), you'd better create your own rules (but I think this repo can help you learn how to create a sharable eslint/prettier config)
 
 ## 😀 Usage 
 
-1. `yarn add --dev eslint prettier typescript eslint-config-xhmm prettier-config-xhmm`
+1. `npm i -D eslint prettier typescript eslint-config-xhmm prettier-config-xhmm`
 
 2. create `.eslintrc`：
 
-   for nodejs
+   when working with `nodejs`：
 
    ```json
    {
@@ -24,7 +24,7 @@ It's my own linter tools config setup, still 'in develop'.
    }
    ```
 
-   or for vanilla browser dev
+   when working with vanilla browser env development：
 
    ```json
    {
@@ -32,7 +32,7 @@ It's my own linter tools config setup, still 'in develop'.
    }
    ```
 
-   or for [typescript react](<https://github.com/XHMM/typescript-react-starter>)
+   when working with [typescript and react](<https://github.com/XHMM/typescript-react-starter>)：
 
    ```json
    {
@@ -48,7 +48,7 @@ It's my own linter tools config setup, still 'in develop'.
    };
    ```
 
-4. edit `tsconfig.json`(below means let tsc deal but not eslint because tsc is more efficient)：
+4. tweak your `tsconfig.json`：
 
    ```json
    {
@@ -59,7 +59,7 @@ It's my own linter tools config setup, still 'in develop'.
    }
    ```
 
-5. you need to have a `tsconfig.json` file for some rules to work, by default, it will search `tsconfig.json` in the same level with node_modules, if you want to change it, change your `.eslintrc` as below :
+5. because some rules need work with `tsconfig.json`  and by default file in the same level with `node_modules` are used, if you want to change the default path, edit your `.eslintrc` like below :
 
    ```json
        {
@@ -83,11 +83,11 @@ It's my own linter tools config setup, still 'in develop'.
    insert_final_newline = true
    ```
 
-7. ~~if using `xhmm/ts-browser` or `xhmm/ts-react`, go on creating `.browserslistrc` and configure your target browsers ([examples](https://github.com/browserslist/browserslist#full-list))~~ I disabled `plugin:compat/recommended`, so please add it manually if you want it, and ps: don't forget to polyfill when working in browser env.
+7. (optional) ~~if using `xhmm/ts-browser` or `xhmm/ts-react`, go on creating `.browserslistrc` and configure your target browsers ([examples](https://github.com/browserslist/browserslist#full-list))~~ I disabled `plugin:compat/recommended`,  add it manually if you want it.
 
-8. (optional) stylelint setup: it's pretty simple (I am not very focus on this linter(because webstorm support is bad?))：
+8. (optional) `stylelint`setup: it's pretty simple (I am not very focus on this linter(because webstorm support is bad?))：
 
-   - `yarn add --dev stylelint stylelint-config-standard`
+   - `npm i -D stylelint stylelint-config-standard`
 
    - create `.stylelintrc`：
 
@@ -97,10 +97,10 @@ It's my own linter tools config setup, still 'in develop'.
      }
      ```
 
-9. (optional) create `.eslintignore` and `.stylelintignore` to ignore not related files. (remind: ignorefiles should be placed in root dir) 
+9. (optional) create `.eslintignore` and `.stylelintignore` to ignore unrelated files. (remind: ignorefiles should be placed in the root folder) 
 
 ------
 
 
 
-😜 That's all, after setup, every prettier format problem will become an eslint error (although it's very annoying, I want to force myself have a good habit of writing clean code, when I got it, I will turn off prettier related rules), you can checkout other rules from source config files, happy confident coding!
+😜 That's all.

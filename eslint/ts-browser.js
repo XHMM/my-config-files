@@ -3,8 +3,8 @@ module.exports = {
     browser: true
   },
   extends: [
-    "plugin:no-unsanitized/DOM",
     "./ts-base.js",
+    "plugin:no-unsanitized/DOM",
     // "plugin:compat/recommended"
   ],
   plugins: ["no-unsanitized"],

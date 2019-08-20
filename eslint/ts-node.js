@@ -1,7 +1,7 @@
 module.exports = {
-  extends: ["plugin:security/recommended", "./ts-base.js"],
+  extends: ["./ts-base.js", "plugin:security/recommended"],
+  plugins: ["security"],
   env: {
     node: true
-  },
-  plugins: ["security"]
+  }
 };
