@@ -14,7 +14,6 @@ module.exports = {
   rules: {
     /*--- @typescript-eslint/eslint-plugin ---*/
     // change recommended
-    "@typescript-eslint/array-type": ["error", "array-simple"],
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       {
