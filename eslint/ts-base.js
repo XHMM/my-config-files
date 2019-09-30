@@ -12,6 +12,8 @@ module.exports = {
   ],
   plugins: ["@typescript-eslint", "import"],
   rules: {
+    /*--- eslint:recommended ---*/
+    "require-atomic-updates": "off",
     /*--- @typescript-eslint/eslint-plugin ---*/
     // change recommended
     "@typescript-eslint/explicit-function-return-type": [
@@ -29,10 +31,12 @@ module.exports = {
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/await-thenable": "off",
+    "@typescript-eslint/camelcase": "off",
     // add custom
     "@typescript-eslint/ban-ts-ignore": ["warn"],
     "@typescript-eslint/member-ordering": ["error"],
-    "@typescript-eslint/restrict-plus-operands": ["error"],
+    "require-await": "off",
     "@typescript-eslint/require-await": ["error"],
     "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }],
 
@@ -40,14 +44,12 @@ module.exports = {
     // i don't why extend recommended rules not work, so i build my custom  rules
     // Style guide
     "import/first": ["error"],
-    "import/exports-last": ["error"],
+    "import/exports-last": "off",
     "import/no-duplicates": ["error"],
     "import/order": ["error"],
     "import/newline-after-import": ["error"],
     "import/no-anonymous-default-export": ["error"],
-    "import/group-exports": ["error"],
-    // Module systems
-    "import/no-nodejs-modules": ["error"]
+    "import/group-exports": "off"
   },
   parser: "@typescript-eslint/parser",
   parserOptions: {
