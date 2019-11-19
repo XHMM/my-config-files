@@ -2,10 +2,12 @@ module.exports = {
   extends: [
     /*--- eslint ---*/
     "eslint:recommended",
+
     /*--- typescript ---*/
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
+
     /*--- prettier ---*/
     "prettier",
     "prettier/@typescript-eslint"
@@ -14,6 +16,8 @@ module.exports = {
   rules: {
     /*--- eslint:recommended ---*/
     "require-atomic-updates": "off",
+    "no-empty-pattern": ["off"],
+
     /*--- @typescript-eslint/eslint-plugin ---*/
     // change recommended
     "@typescript-eslint/explicit-function-return-type": [
