@@ -83,7 +83,7 @@ One day I wake up and made this repo and publish them as npm module, now I can e
    insert_final_newline = true
    ```
 
-7. (optional) ~~if using `xhmm/ts-browser` or `xhmm/ts-react`, go on creating `.browserslistrc` and configure your target browsers ([examples](https://github.com/browserslist/browserslist#full-list))~~  I disabled `plugin:compat/recommended`, you should add it manually if you want it.
+7. if using `xhmm/ts-browser` or `xhmm/ts-react`, go on creating `.browserslistrc` and configure target browsers ([examples](https://github.com/browserslist/browserslist#full-list))
 
 8. (optional) `stylelint`setup: it's pretty simple (I am not very focus on this linter(because webstorm support is bad?))：
 
