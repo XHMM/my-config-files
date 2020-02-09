@@ -43,6 +43,17 @@ module.exports = {
     "require-await": "off",
     "@typescript-eslint/require-await": ["error"],
     "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }],
+    // use comma instead semi(default) so we can quickly create a corresponding object without change semi to colon
+    "@typescript-eslint/member-delimiter-style": ["error", {
+      "multiline": {
+        "delimiter": "comma",
+        "requireLast": true
+      },
+      "singleline": {
+        "delimiter": "comma",
+        "requireLast": true
+      }
+    }],
 
     /*--- eslint-plugin-import ---*/
     // i don't why extend recommended rules not work, so i build my custom  rules
