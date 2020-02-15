@@ -3,6 +3,11 @@ module.exports = {
     /*--- eslint ---*/
     "eslint:recommended",
 
+    /*--- eslint-plugin-import ---*/
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+
     /*--- typescript ---*/
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
@@ -12,7 +17,7 @@ module.exports = {
     "prettier",
     "prettier/@typescript-eslint"
   ],
-  plugins: ["@typescript-eslint", "import"],
+  plugins: ["@typescript-eslint"],
   rules: {
     /*--- eslint:recommended ---*/
     "require-atomic-updates": "off",
@@ -54,17 +59,6 @@ module.exports = {
         "requireLast": true
       }
     }],
-
-    /*--- eslint-plugin-import ---*/
-    // i don't why extend recommended rules not work, so i build my custom  rules
-    // Style guide
-    "import/first": ["error"],
-    "import/exports-last": "off",
-    "import/no-duplicates": ["error"],
-    "import/order": ["error"],
-    "import/newline-after-import": ["error"],
-    "import/no-anonymous-default-export": ["error"],
-    "import/group-exports": "off"
   },
   parser: "@typescript-eslint/parser",
   parserOptions: {
