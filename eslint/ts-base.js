@@ -59,6 +59,9 @@ module.exports = {
         "requireLast": true
       }
     }],
+
+    /*--- eslint-plugin-import ---*/
+    "import/no-default-export": ["error"]
   },
   parser: "@typescript-eslint/parser",
   parserOptions: {
