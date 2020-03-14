@@ -1,17 +1,16 @@
 module.exports = {
   extends: [
     /*--- eslint ---*/
+    /*--- typescript ---*/
     "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
 
     /*--- eslint-plugin-import ---*/
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
-
-    /*--- typescript ---*/
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
 
     /*--- prettier ---*/
     "prettier",
@@ -35,7 +34,8 @@ module.exports = {
     ],
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/interface-name-prefix": ["warn", {"prefixWithI": "never"}],
-    "@typescript-eslint/no-use-before-define": ["error", { functions: false }],
+    "@typescript-eslint/no-use-before-define": "off",
+    // "@typescript-eslint/no-use-before-define": ["error", { functions: false }],
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-var-requires": "off",
@@ -48,8 +48,9 @@ module.exports = {
     "require-await": "off",
     "@typescript-eslint/require-await": ["error"],
     "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }],
-    // use comma instead semi(default) so we can quickly create a corresponding object without change semi to colon
-    "@typescript-eslint/member-delimiter-style": ["error", {
+    "@typescript-eslint/no-this-alias": "off",
+    // use comma instead semi(default) so we can quickly create a corresponding object without change semi to colon (this rule conflict with prettier and disabled by default, because prettier semi option also works on interface)
+    /*"@typescript-eslint/member-delimiter-style": ["error", {
       "multiline": {
         "delimiter": "comma",
         "requireLast": true
@@ -58,7 +59,7 @@ module.exports = {
         "delimiter": "comma",
         "requireLast": true
       }
-    }],
+    }],*/
 
     /*--- eslint-plugin-import ---*/
     "import/no-default-export": ["error"]
@@ -68,5 +69,10 @@ module.exports = {
     sourceType: "module",
     project: "./tsconfig.json",
     tsconfigRootDir: "."
+  },
+  settings: {
+    "import/resolver": {
+      "typescript": {}
+    }
   }
 };

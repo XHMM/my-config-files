@@ -1,5 +1,10 @@
 module.exports = {
-  extends: ["./ts-browser.js", "prettier/react", "plugin:react/recommended"],
+  extends: [
+    "./ts-browser.js",
+    "prettier/react",
+    "plugin:react/recommended",
+    "plugin:compat/recommended"
+  ],
   plugins: ["react-hooks"],
   rules: {
     /* eslint-plugin-react */
