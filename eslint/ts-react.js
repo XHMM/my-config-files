@@ -14,7 +14,10 @@ module.exports = {
 
     /* eslint-plugin-react-hooks */
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
+
+    /*--- eslint-plugin-import ---*/
+    "import/no-default-export": "off"
   },
   parserOptions: {
     ecmaFeatures: {

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-xhmm",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "license": "MIT",
   "author": "xhmm",
   "dependencies": {
