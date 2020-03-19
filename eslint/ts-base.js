@@ -62,7 +62,11 @@ module.exports = {
     }],*/
 
     /*--- eslint-plugin-import ---*/
-    "import/no-default-export": ["error"]
+    "import/no-default-export": ["error"],
+    // fix eslint-import-resolver-typescript complains 'no default export found in react' when I write 'import React from "react"' when IesModuleInterop:true
+    "import/default": 0,
+    // fix eslint-import-resolver-typescript complains 'no named export found in lodash'
+    "import/named": 0,
   },
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -72,6 +76,7 @@ module.exports = {
   },
   settings: {
     "import/resolver": {
+      // WARNING: eslint-import-resolver-typescript complains 'unresolved' if tsconfig baseUrl is such as './src'，but when file outside of src using alias, you must set baseUrl to '.' (I may need to check this package source code to fix this problem)
       "typescript": {}
     }
   }
