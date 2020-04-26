@@ -100,7 +100,7 @@ I am a typescript user.
 9. (optional) create `.eslintignore` and `.stylelintignore` to ignore unrelated files. (remind: place this files in the root folder) 
 
 ## 😇 Related Scrips
-- `eslint --fix --ext .ts --fix ./src`
+- `eslint --fix --ext .ts ./src`
 - `prettier --write \"./src/**/*.ts\"`
 
 😜 That's all.
