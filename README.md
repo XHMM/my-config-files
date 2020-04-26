@@ -103,6 +103,6 @@ I am a typescript user.
 
 # 😇 Related Scrips
 - `eslint --fix --ext .ts --fix ./src`
-- `prettier --write ./src/**/*.ts`
+- `prettier --write \"./src/**/*.ts\"`
 
 😜 That's all.
