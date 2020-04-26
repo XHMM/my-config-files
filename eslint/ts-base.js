@@ -21,6 +21,7 @@ module.exports = {
     /*--- eslint:recommended ---*/
     "require-atomic-updates": "off",
     "no-empty-pattern": ["off"],
+    "prefer-rest-params": "off",
 
     /*--- @typescript-eslint/eslint-plugin ---*/
     // change recommended

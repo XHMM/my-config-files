@@ -3,20 +3,20 @@
 It's my own linter tools config setup, still 'in developing'. 
 
 ## 😄 Say Hi
+Before I used eslint and prettier frequently but I didn't remember to create a sharable config, so I need to setup them every time, it's really cumbersome and even made me no willing to use eslint and prettier. 
 
-My experience: although I used eslint and prettier many times but I did not remember to create a sharable config, so I always need to setup them every time, it's really cumbersome and even made me not want to use eslint and prettier. 
+One day I wake up and made this repo and published as npm modules. Now I can easily setup them, so happy. I will update this repo according to my dev road. 
 
-One day I wake up and made this repo and publish them as npm module, now I can easily setup them, so happy. (PS: this repo will include all my config files not only eslint and prettier). I update this repo according to my dev road. 
-
-**Reminid:** This repo is just for personal use, if someone want to use it (happy), you'd better create your own rules (but I think this repo can help you learn how to create a sharable eslint/prettier config)
+**Remind:** This repo is just for personal use, if someone want to use it (happy), you'd better create your own rules (but I think this repo can help you learn how to create a sharable eslint/prettier config)
 
 ## 😀 Usage 
+I am a typescript user.
 
-1. `npm i -D eslint prettier typescript eslint-config-xhmm prettier-config-xhmm`
+1. `npm i -D eslint prettier typescript`
+1. `npm i -D eslint-config-xhmm prettier-config-xhmm`
+2. create `.eslintrc` and edit :
 
-2. create `.eslintrc` and then：
-
-   when working with `nodejs`：
+   when working with `nodejs` :
 
    ```json
    {
@@ -24,7 +24,7 @@ One day I wake up and made this repo and publish them as npm module, now I can e
    }
    ```
 
-   when working with vanilla browser env development：
+   when working with vanilla browser env development :
 
    ```json
    {
@@ -32,7 +32,7 @@ One day I wake up and made this repo and publish them as npm module, now I can e
    }
    ```
 
-   when working with [typescript and react](<https://github.com/XHMM/typescript-react-starter>)：
+   when working with react (feel free to checkout my [typescript-react-start](<https://github.com/XHMM/typescript-react-starter>)) :
 
    ```json
    {
@@ -40,7 +40,7 @@ One day I wake up and made this repo and publish them as npm module, now I can e
    }
    ```
 
-3. create `prettier.config.js`：
+3. create `prettier.config.js` :
 
    ```js
    module.exports = {
@@ -48,7 +48,7 @@ One day I wake up and made this repo and publish them as npm module, now I can e
    };
    ```
 
-4. modify `tsconfig.json`：
+4. modify `tsconfig.json` :
 
    ```json
    {
@@ -85,11 +85,11 @@ One day I wake up and made this repo and publish them as npm module, now I can e
 
 7. if using `xhmm/ts-browser` or `xhmm/ts-react`, go on creating `.browserslistrc` and configure target browsers  ([examples](https://github.com/browserslist/browserslist#full-list))
 
-8. (optional) `stylelint` setup : I am not very focus on this linter, but it's pretty simple：
+8. (optional) `stylelint` setup : I am not very focus on this linter, but it's pretty simple :
 
    - `npm i -D stylelint stylelint-config-standard`
 
-   - create `.stylelintrc`：
+   - create `.stylelintrc` :
 
      ```json
      {
@@ -101,5 +101,8 @@ One day I wake up and made this repo and publish them as npm module, now I can e
 
 ------
 
+# 😇 Related Scrips
+- `eslint --fix --ext .ts --fix ./src`
+- `prettier --write ./src/**/*.ts`
 
 😜 That's all.
