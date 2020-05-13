@@ -1,8 +1,9 @@
 module.exports = {
   extends: [
     /*--- eslint ---*/
-    /*--- typescript ---*/
     "eslint:recommended",
+
+    /*--- typescript ---*/
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
@@ -50,7 +51,8 @@ module.exports = {
     "@typescript-eslint/require-await": ["error"],
     "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }],
     "@typescript-eslint/no-this-alias": "off",
-    // use comma instead semi(default) so we can quickly create a corresponding object without change semi to colon (this rule conflict with prettier and disabled by default, because prettier semi option also works on interface)
+    // use comma instead semi(default) so we can quickly create a corresponding object without change semi to colon
+    // (this rule conflicts with prettier and disabled by default, because prettier semi option also works on interface)
     /*"@typescript-eslint/member-delimiter-style": ["error", {
       "multiline": {
         "delimiter": "comma",
@@ -64,10 +66,8 @@ module.exports = {
 
     /*--- eslint-plugin-import ---*/
     "import/no-default-export": ["error"],
-    // fix eslint-import-resolver-typescript complains 'no default export found in react' when I write 'import React from "react"' when IesModuleInterop:true
-    "import/default": 0,
-    // fix eslint-import-resolver-typescript complains 'no named export found in lodash'
-    "import/named": 0,
+    "import/order": "error",
+    "import/no-unresolved": 0 // eslint-plugin-import not work well with ts path alias, disabled it, let IDE help us
   },
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -76,9 +76,6 @@ module.exports = {
     tsconfigRootDir: "."
   },
   settings: {
-    "import/resolver": {
-      // WARNING: eslint-import-resolver-typescript complains 'unresolved' if tsconfig baseUrl is such as './src'，but when file outside of src using alias, you must set baseUrl to '.' (I may need to check this package source code to fix this problem)
-      "typescript": {}
-    }
+
   }
 };

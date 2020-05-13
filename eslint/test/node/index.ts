@@ -1,6 +1,7 @@
-import foo from "./b";
-// error
-import * as fs from "typescript";
+import foo from "./lib";
+import * as fs from "fs";
+
+console.log(foo, fs);
 
 // @ts-ignore
 interface IAPP {

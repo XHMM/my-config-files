@@ -1,7 +1,8 @@
 import React, { FunctionComponent } from 'react';
+import Show from '@cmp/show'
 
 const Index: FunctionComponent<IProps> = ({}) => {
-  return <div children="Children" />;
+  return <div><Show /></div>;
 };
 
 interface IProps {}

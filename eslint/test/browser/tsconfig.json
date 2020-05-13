@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "target": "es5"
   }
 }

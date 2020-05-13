@@ -1,6 +1,12 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "jsx": "react"
-  }
+    "jsx": "react",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@cmp/*": ["./components/*"]
+    }
+  },
+  "include": ["./index.tsx", "components"]
 }
