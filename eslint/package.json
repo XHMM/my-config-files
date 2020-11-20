@@ -9,28 +9,28 @@
     "test:react": "node test-react.js"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.33.0",
-    "@typescript-eslint/parser": "^2.33.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-import-resolver-typescript": "^2.0.0",
-    "eslint-plugin-compat": "^3.6.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-no-unsanitized": "^3.1.1",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-compat": "^3.8.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-no-unsanitized": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-security": "^1.4.0"
   },
   "peerDependencies": {
-    "eslint": "^7.0.0",
-    "prettier": "^2.0.5",
-    "typescript": "^3.9.2"
+    "eslint": "^7.13.0",
+    "prettier": "^2.2.0",
+    "typescript": "^4.1.2"
   },
   "devDependencies": {
-    "@types/node": "^14.0.1",
-    "@types/react": "^16.9.35",
-    "eslint": "^7.0.0",
-    "prettier": "^2.0.5",
-    "react": "^16.13.1",
-    "typescript": "^3.9.2"
+    "@types/node": "^14.14.9",
+    "@types/react": "^16.14.0",
+    "eslint": "^7.13.0",
+    "prettier": "^2.2.0",
+    "react": "^17.0.1",
+    "typescript": "^4.1.2"
   }
 }
